@@ -45,7 +45,7 @@ model_args =
     ......
  'update_type': 'transformer' if args.transformer else 'gru'}
 ```
-The ```update_type``` here decides the type of update function, and you can change it by changing arguments ```--transformer``` when running the code to use transformer rather than gpu. Saving and loading trained model file with transformer architecture is correspondingly set automately in 
+The ```update_type``` here decides the type of update function, and you can change it by changing arguments ```--transformer``` when running the code to use transformer rather than GRU. Saving and loading trained model file with transformer architecture is correspondingly set automately in 
 ```
 ./my_gpnn/datasets/utils.py
 ```
@@ -80,7 +80,6 @@ python my_gpnn/vcoco.py
 ```
 
 
-### CAD-120
 ### CAD-120
 
 It has two files as 
